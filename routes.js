@@ -12,7 +12,6 @@ const requestHandler = (req,res) => {
             }else{
                 completeMessage.push("Error!");
             }
-
             res.write('<html>');
             res.write('<head><title>Form Page</title></head>');
             res.write(`<body><p>${completeMessage}</p><form action="/message" method="POST"><input type="text" name="message"><input type="submit" value="send"></form>`)
